@@ -27,7 +27,7 @@
 .button-container 
 {
     position: absolute;
-    bottom: 2%;
+    bottom: 5%;
     width: 100%;
     align-items: center;
 
@@ -61,6 +61,7 @@ button
     position: absolute;
     right: 10%;
 } */
+
 
 
 
