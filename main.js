@@ -50,3 +50,9 @@ document.getElementById("uploadButton").addEventListener('click', uploadFileClic
 function uploadFileClicked(){
   document.getElementById('textureSelector').click();
 }
+
+document.getElementById("arButton").addEventListener(click, arButtonClicked);
+
+function arButtonClicked(){
+  document.getElementById("ar-button").click();
+}
