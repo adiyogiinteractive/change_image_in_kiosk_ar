@@ -30,6 +30,22 @@ body
     /* display: none; */
 }
 
+#uploadButton
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7dbdf1;
+    border-radius: 25px;
+    border: none;
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    padding: 10px;
+    /* display: none; */
+}
+
 .button-container 
 {
     position: absolute;
