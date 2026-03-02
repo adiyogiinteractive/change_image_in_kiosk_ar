@@ -31,9 +31,7 @@
         shadow-intensity="1"
         camera-orbit="0deg 90deg 105%"
         min-camera-orbit="auto 0deg auto"
-        max-camera-orbit="auto 90deg auto"
-        disable-tap 
-        touch-action="pan-y">
+        max-camera-orbit="auto 90deg auto">
 
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
@@ -44,22 +42,19 @@
         <!-- <div id="ar-prompt">
             <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
         </div> -->
-        <button slot="ar-button" class="ar-button">
-            <p> Activate AR</p>
+        <button slot="ar-button" id="ar-button" class="ar-button">
+            <img src="images/ar_1.png" width="30px">
+            <!-- <p> Activate AR</p> -->
         </button>
+        <div id="error" class="hide">AR is not supported on this device</div>
     </model-viewer>
 
     <input type="file" id="textureSelector" hidden>
     <div class="button-container">
         <button type="button" id="uploadButton">Upload Image</button>
-        <button type="button" id="arButton">Activate AR</button>
+        <!-- <button type="button" id="arButton">Activate AR</button> -->
     </div>
     
     <script src='main.js'></script>
 </body>
 </html>
-
-
-
-
-
