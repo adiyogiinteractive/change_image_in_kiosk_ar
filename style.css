@@ -26,6 +26,11 @@
 
 .button-container 
 {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    align-items: center;
+
     display: flex;
     /* Optional: adds space between the buttons */
     gap: 10px; 
