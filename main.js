@@ -3,22 +3,19 @@
 const modelViewer = document.querySelector("model-viewer");
 console.log("modelViewer : " + modelViewer);
 
-modelViewer.addEventListener("load", async () => {
-  //Selecting the particular material, In this case material name is "Material #45"
-  //const material = modelViewer.model.getMaterialByName('Material #45');
+// modelViewer.addEventListener("load", async () => {
+//   //Selecting the particular material, In this case material name is "Material #45"
+//   const material = modelViewer.model.getMaterialByName('Material #45');
   
-  //Selecting the particular material, In this case material name is "PosterMaterial"
-  const material = modelViewer.model.getMaterialByName('Material #45');
+//   // Create a new texture from an image
+//   const texture = await modelViewer.createTexture('textures/woman.png');
   
-  // Create a new texture from an image
-  //const texture = await modelViewer.createTexture('textures/woman.png');
-  
-  // Apply the new texture
-  //material.pbrMetallicRoughness.baseColorTexture.setTexture(texture);
+//   // Apply the new texture
+//   material.pbrMetallicRoughness.baseColorTexture.setTexture(texture);
 
-  //Before the material color was parrot green so we have to change it to white
-  material.pbrMetallicRoughness.setBaseColorFactor([1.0, 1.0, 1.0, 1.0]);
-});
+//   //Before the material color was parrot green so we have to change it to white
+//   material.pbrMetallicRoughness.setBaseColorFactor([1.0, 1.0, 1.0, 1.0]);
+// });
 
 // Get a reference to the file input element
 const fileInput = document.getElementById('textureSelector');
@@ -46,5 +43,10 @@ fileInput.addEventListener('change', async (event) => {
   // Apply the new texture
   material.pbrMetallicRoughness.baseColorTexture.setTexture(texture);
   //material.pbrMetallicRoughness.baseColorTexture.texture.source.setURI(texture);
-  
 });
+
+document.getElementById("uploadButton").addEventListener('click', uploadFileClicked);
+
+function uploadFileClicked(){
+  document.getElementById('textureSelector').click();
+}
